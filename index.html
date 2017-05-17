@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HouXianXian  | 个人网络空间系统</title>
+<link rel="icon" href="icon/index.ico">
+<link rel="shortcut icon" href="icon/index.ico" />
+<meta name="keyword" content="Dark Blue,HouXianXian ,Love,Girl friend gift,Online,Web OS">
+<meta name="description" content="HouXianXian (王甜甜)是王石设计的一款个人网络空间系统，带领您感受网络空间的心跳。">
+<meta name="author" content="Shi.Wang">
+<link rel="stylesheet" type="text/css" href="login/css/styles.css">
+<script type="text/javascript">
+function checkLoginForm() {
+    var un = document.getElementById("user");
+    var pw = document.getElementById("pwd");
+    if(un.value == "houxianxian" && pw.value == "houxianxian") {
+	    document.form.action="index-1.html";
+        return true;}
+		else{
+        alert("User or Password can not be Ture")
+        return false;
+    }
+}
+
+
+</script>
+
+</head>
+<body>
+
+<div class="htmleaf-container">
+	<div class="wrapper">
+		<div class="container">
+			<h1>Welcome</h1>			
+			
+			<form class="form" method="post" action="./index-1.html" onsubmit="return checkLoginForm()">
+				<input type="text" placeholder="Username" id="user">
+				<input type="password" placeholder="Password" id="pwd">
+				<button type="submit" id="login-button">Login</button>
+			</form>
+			
+		</div>
+		
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</div>
+
+
+<script src="login/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+
+
+
+
+</body>
+</html>
